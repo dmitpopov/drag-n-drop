@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,1000,3000,4000,5000,7000,9001,1001,3001,4001,5001,7001,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.task-board {
+  width: 336px;
+  margin: 70px auto 0;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.task-board__head-strip {
+  background-color: #FFDC40;
+  height: 28px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.task-board__sort-dir {
+  margin: 10px auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 35px;
+  color: #C4C4C4;
+}
+
+.task-board__task-wrap {
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-unit {
+  margin: 10px auto 0;
+  text-align: center;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: auto;
+  width: 286px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.task-wrap__task {
+  border: none;
+  outline: none;
+}
+
+.task-wrap__task-delete {
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.task-wrap__task-delete:hover {
+  background-color: #de7070;
+}
+
+.task-board__add-task-button {
+  margin: 20px auto 0;
+  background-color: #833AE0;
+  width: 150px;
+  height: 42px;
+  border-radius: 71px;
+  border: none;
+  outline: none;
+  position: relative;
+  color: #FFFFFF;
+  text-align: right;
+  padding-right: 25px;
+}
+.task-board__add-task-button::before {
+  content: "+";
+  left: 0;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #9953F1;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.task-board__add-task-button span {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
