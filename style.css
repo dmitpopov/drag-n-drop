@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .task-board {
@@ -33,6 +33,10 @@ h1 {
   color: #C4C4C4;
 }
 
+.unsorted {
+  display: none;
+}
+
 .task-board__task-wrap {
   margin: 10px auto 0;
   display: flex;
@@ -42,7 +46,7 @@ h1 {
 }
 
 .task-unit {
-  margin: 10px auto 0;
+  margin: 10px auto;
   text-align: center;
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
@@ -54,6 +58,10 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
+}
+
+.task-wrap__drag-point:hover {
+  cursor: pointer;
 }
 
 .task-wrap__task {
@@ -105,6 +113,11 @@ h1 {
 
 .task-board__add-task-button span {
   display: block;
+}
+
+.dragged {
+  opacity: 0.6;
+  background-color: #EED97C;
 }
 
 /*# sourceMappingURL=style.css.map */

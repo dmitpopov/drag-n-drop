@@ -3,7 +3,7 @@
 body
   margin: 0
   padding: 0
-  font-family: Roboto, sans-serif
+  font-family: Roboto, Arial, sans-serif
 
 .task-board
   width: 336px
@@ -29,6 +29,10 @@ h1
   padding-right: 35px
   color: #C4C4C4
 
+.unsorted
+  display: none
+
+
 .task-board__task-wrap
   margin: 10px auto 0
   display: flex
@@ -37,7 +41,7 @@ h1
   justify-content: space-between
 
 .task-unit
-  margin: 10px auto 0
+  margin: 10px auto
   text-align: center
   border: 1px solid #C4C4C4
   box-sizing: border-box
@@ -50,13 +54,15 @@ h1
   justify-content: space-between
   padding: 0 10px
 
+.task-wrap__drag-point
+  &:hover
+    cursor: pointer
 
 .task-wrap__task
   border: none
   outline: none
 
 .task-wrap__task-delete
-  //color: #C4C4C4
   background-color: #FFFFFF
   display: flex
   padding: 0
@@ -99,3 +105,7 @@ h1
 
 .task-board__add-task-button span
   display: block
+
+.dragged
+  opacity: 0.6
+  background-color: #EED97C
