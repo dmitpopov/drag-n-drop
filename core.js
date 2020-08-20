@@ -156,6 +156,17 @@ function sortDown () {
 const sortButtonUp = document.querySelector('.sort-up');
 const sortButtonDown = document.querySelector('.sort-down');
 
+sortButtonUp.addEventListener('mouseover', () => {
+   sortButtonUp.querySelector('img').src = 'img/sort-down-black.png';
+});
+sortButtonUp.addEventListener('mouseout', () => {
+    sortButtonUp.querySelector('img').src = 'img/sort-down.png';
+})
+
+sortButtonDown.addEventListener('mouseover', () => {
+    sortButtonUp.querySelector('img').src = 'img/sort-up-black.png';
+});
+
 sortButtonUp.addEventListener('click', () => {
     sortButtonUp.classList.add('unsorted');
     sortButtonDown.classList.remove('unsorted');

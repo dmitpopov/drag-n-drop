@@ -14,18 +14,12 @@
         To-Do List
     </h1>
     <div class="task-board__sort-dir">
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sort-up sort-down unsorted" fill="currentColor"
-             xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M3 13a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-1 0v10a.5.5 0 0 0 .5.5z"/>
-            <path fill-rule="evenodd"
-                  d="M5.354 4.854a.5.5 0 0 0 0-.708l-2-2a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L3 3.207l1.646 1.647a.5.5 0 0 0 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 9a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
-        </svg>
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sort-down-alt sort-up" fill="currentColor"
-             xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M3 3a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-1 0v-10A.5.5 0 0 1 3 3z"/>
-            <path fill-rule="evenodd"
-                  d="M5.354 11.146a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L3 12.793l1.646-1.647a.5.5 0 0 1 .708 0zM7 6.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5zm0 3a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5zm0 3a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5zm0-9a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0-.5.5z"/>
-        </svg>
+        <button class="up sort-up unsorted">
+        </button>
+        <button class="down sort-down">
+        </button>
+<!--         -->
+<!--        -->
     </div>
     <div class="task-board__task-wrap">
         <div class="task-unit task-unit-drag task-first">
@@ -39,11 +33,6 @@
             </div>
             <input type="text" class="task-wrap__task">
             <button class="task-wrap__task-delete">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="0.5" y="0.5" width="19" height="19" rx="9.5" stroke="#C4C4C4"/>
-                    <path d="M6 6L14 14" stroke="#C4C4C4"/>
-                    <path d="M6 14L14 6" stroke="#C4C4C4"/>
-                </svg>
             </button>
         </div>
     </div>

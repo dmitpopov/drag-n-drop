@@ -24,6 +24,7 @@ h1
 
 .task-board__sort-dir
   margin: 10px auto
+  height: 25px
   display: flex
   justify-content: flex-end
   padding-right: 35px
@@ -32,27 +33,48 @@ h1
 .unsorted
   display: none
 
+.up
+  border: none
+  background-color: #FFFFFF
+  width: 25px
+  height: 20px
+  outline: none
+  background-repeat: no-repeat
+  background-image: url(img/sort-up.png)
+  &:hover
+    background-image: url(img/sort-up-black.png)
+
+.down
+  border: none
+  background-color: #FFFFFF
+  width: 25px
+  height: 25px
+  outline: none
+  background-repeat: no-repeat
+  background-image: url(img/sort-down.png)
+  &:hover
+    background-image: url(img/sort-down-black.png)
 
 .task-board__task-wrap
-  margin: 10px auto 0
+  margin: 0 auto
+  border: 1px solid #C4C4C4
+  width: 286px
+  border-radius: 10px
   display: flex
   flex-direction: column
   align-items: center
   justify-content: space-between
 
 .task-unit
-  margin: 10px auto
+  width: inherit
   text-align: center
-  border: 1px solid #C4C4C4
   box-sizing: border-box
-  border-radius: 10px
   overflow: auto
-  width: 286px
   height: 40px
   display: flex
   align-items: center
   justify-content: space-between
-  padding: 0 10px
+  padding: 0 0 0 10px
 
 .task-wrap__drag-point
   &:hover
@@ -61,18 +83,26 @@ h1
 .task-wrap__task
   border: none
   outline: none
+  width: 100%
+  margin: 0 20px
 
 .task-wrap__task-delete
-  background-color: #FFFFFF
+  //background-color: #FFFFFF
   display: flex
   padding: 0
-  margin: 0
   border: 0
   outline: none
-  border-radius: 40px
-  overflow: hidden
+  margin: 10px
+  border-radius: 50%
+  //border-radius: 40px
+  //overflow: hidden
+  background-image: url(img/delete-button.png)
+  background-size: 100%
+  width: 32px
+  height: 20px
+  background-repeat: no-repeat
   &:hover
-    background-color: #de7070
+    background-color: #833AE0
 
 
 
