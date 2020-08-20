@@ -51,7 +51,13 @@ taskCreate.addEventListener('click', () => {
 Task delete
  */
     createTaskUnit.lastElementChild.addEventListener('click', () => {
-        createTaskUnit.remove();
+        const taskDeleteAll = document.querySelectorAll('.task-unit');
+        if (taskDeleteAll.length === 1) {
+            createTaskUnit.querySelector('.task-wrap__task').value = '';
+        } else {
+            createTaskUnit.remove();
+        }
+        // createTaskUnit.remove();
     });
 
 /*
