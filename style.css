@@ -99,6 +99,7 @@ h1 {
 }
 
 .task-wrap__task-delete {
+  background-color: #FFFFFF;
   display: flex;
   padding: 0;
   border: 0;
